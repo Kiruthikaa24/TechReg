@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> TechReg</title>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="scroll.js"></script>
+   
+</head>
+
+
+<body>
+    <div class="wrapper">
+ 
+        <span class="anchorHook" id="home"></span> 
+            
+        <div class="navigation">
+            <span class="navHeading hideOnMobile" data-id="home">Home</span>
+            <span class="navHeading" data-id="events">Events</span>
+
+            <span class="navHeading" data-id="members">Organizers</span>
+           <!-- <span class="navHeading" data-id="contacts">Contacts</span>-->
+            <span class="navHeading navButtonOrange" data-id="contacts">Contact us</span>
+        </div>
+    </div>
+
+        <div class="aboutFuntech">
+            <div class="contentHeading">ABOUT FUNTECH</div>
+            <div class="gallery">
+                
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  
+                  <img src="https://www.pcma.org/wp-content/uploads/2018/11/Trendspotter-Event-Tech-Trend-Banner-818x460.jpg" style="width:100%">
+                
+                </div>
+                
+                <div class="mySlides fade">
+                  
+                  <img src="https://zd-brightspot.s3.us-east-1.amazonaws.com/wp-content/uploads/2023/09/05181029/top-10-tech-events-in-September-2023.jpg" style="width:100%">
+                 
+                </div>
+                
+                <div class="mySlides fade">
+                  
+                  <img src="https://media.istockphoto.com/id/871030872/photo/programming-code-abstract-technology-background-of-software-developer.jpg?s=612x612&w=0&k=20&c=lkfUNy8Sf3TpFBeIfpBAy6FB5XQwbwjdzypK_1uOQd8=" style="width:100%">
+                  
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+            </div>
+                <script>
+                let slideIndex = 0;
+                showSlides();
+                
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 2000); // Change image every 2 seconds
+                }
+                </script>
+
+
+            <span class="someText">
+                FUNTECH is an annual inter-college techincal event for students. It is conducted by the Computer society of ABC college.
+                Students actively participate in the event every year. There are many fun activities and non-technical events that enhances
+                their creativity skills and critical thinking. Workshops and Coding challenges improves their techno-acumen and is beneficial
+                for their career too.
+            </span>
+        </div>
+        <span class="anchorHook" id="events"></span>
+        <div class="events">
+            <span class="contentHeading">EVENTS</span>
+            <div class="eventsContainer">
+                <a href="codec.html">
+                <div class="eventCard codec" data-eventName="codec">
+                    <img src="https://w0.peakpx.com/wallpaper/987/583/HD-wallpaper-language-c-chedesign-programming-thumbnail.jpg" alt="Event Name" height="60" width="60"
+                        class="eventLogo">
+                    <span class="eventName"><p>CODE C</p></span>
+                    <!--<span class="eventOrganizer">Literary Club</span>-->
+                </div></a>
+                <a href="SHARKTANK.HTML">
+                <div class="eventCard sharktank" data-eventName="sharktank">
+                    <img src="https://i.pinimg.com/originals/bc/4a/74/bc4a7423aae24615462acf16aa4f8442.jpg" alt="Event Name" height="60" width="60"
+                        class="eventLogo">
+                    <span class="eventName"><p>SHARK TANK</p></span>
+                    <!--<span class="eventOrganizer">Literary Club</span>-->
+                </div></a>
+                <a href="querydb.html">
+                <div class="eventCard querydb" data-eventName="querydb">
+                    <img src="https://previews.123rf.com/images/supertrooper/supertrooper1911/supertrooper191100230/133467160-text-sql-structured-query-language-on-laptop-database-search-data-code-internet-security-and.jpg" alt="Event Name" height="60" width="60"
+                        class="eventLogo">
+                    <span class="eventName"><p>QUERY DB</p></span>
+                    <!--<span class="eventOrganizer">Literary Club</span>-->
+                </div></a>
+                <a href="playwithpy.html">
+                <div class="eventCard playwithpy" data-eventName="playwithpy">
+                    <img src="https://images.hdqwalls.com/download/python-logo-4k-i6-2932x2932.jpg" alt="Event Name" height="60" width="60"
+                        class="eventLogo">
+                    <span class="eventName"><p>PLAY WITH PY</p></span>
+                    <!--<span class="eventOrganizer">Literary Club</span>-->
+                </div></a>
+                <a href="jumpwjava.html">
+                <div class="eventCard jumpwithjava" data-eventName="jumpwithjava">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1183/1183669.png" alt="Event Name" height="60" width="60"
+                        class="eventLogo">
+                    <span class="eventName"><p>JUMP WITH JAVA</p></span>
+                    <!--<span class="eventOrganizer">Literary Club</span>-->
+                </div></a>
+            </div>
+        </div>
+        <span class="anchorHook" id="members"></span>
+        <div class="members">
+            <span class="contentHeading">ORGANIZERS</span>
+            <div class="membersContainer">
+                <div class="memberCard">
+                    <img src="https://m.media-amazon.com/images/I/31Cd9UQp6eL._UF1000,1000_QL80_.jpg" alt="Chairman" height="120" width="120">
+                    <span class="memberName">Krithiga H</span>
+                    <span class="memberDesignation">Chairman</span>
+                </div>
+                <div class="memberCard">
+                    <img src="https://m.media-amazon.com/images/I/41miU+cgrLL.jpg" alt="Member Profile" height="120" width="120">
+                    <span class="memberName">Kiruthika A </span>
+                    <span class="memberDesignation">President</span>
+                </div>
+            </div>
+        </div>
+        <span class="anchorHook" id="contacts"></span>
+        <div class="contact">
+            <span class="contentHeading">CONTACT</span>
+            <div class="contactCardContainer">
+                <div class="contactCard">
+                    <div class="contactImageContainer">
+                        <img src="https://img.freepik.com/free-vector/gift-shopping-checklist-girl-cartoon-character-buying-presents-online-e-commerce-gift-card-promotion-birthday-anniversary-bonus_335657-77.jpg" alt="Event Query" height="80" width="60">
+                    </div>
+                    <span class="contactDetails">FOR EVENT</span>
+                    <span class="contactDetails">RELATED QUERIES</span>
+                    <div class="contactMember">
+                        <span class="contactMemberName">Thirunavukkarasu</span>
+                        <span class="contactMemberPhone">
+                            <a href="tel:+91 1234567890">+91 9360649427</a>
+                        </span>
+                    </div>
+                    <div class="contactMember">
+                        <span class="contactMemberName">Sudarsun</span>
+                        <span class="contactMemberPhone">
+                            <a href="tel:+91 1234567890">+91 8610189750</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="contactCard">
+                    <div class="contactImageContainer">
+                        <img src="https://cdn.prod.website-files.com/5e7783f66312835b392f3113/5e7783f663128372ad2f3180_5d63c888a93ad9c0c7d5a5df_Group%202972.png" alt="Payment Query" height="70" width="84">
+                    </div>
+                    <span class="contactDetails">FOR PAYMENT</span>
+                    <span class="contactDetails">RELATED QUERIES</span>
+                    <div class="contactMember">
+                        <span class="contactMemberName">Bharath</span>
+                        <span class="contactMemberPhone">
+                            <a href="tel:+91 1234567890">+91 8637677627</a>
+                        </span>
+                    </div>
+                    <div class="contactMember">
+                        <span class="contactMemberName">Thirunavukkarasu</span>
+                        <span class="contactMemberPhone">
+                            <a href="tel:+91 1234567890">+91 9360649427</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="contactCard">
+                    <div class="contactImageContainer">
+                        <img src="https://tourismteacher.com/wp-content/uploads/2020/08/238403042.jpg.webp" alt="Hostel Query" height="70" width="74">
+                    </div>
+                    <span class="contactDetails">FOR ACCOMODATION</span>
+                    <span class="contactDetails">RELATED QUERIES</span>
+                    <div class="contactMember">
+                        <span class="contactMemberName">Bharath</span>
+                        <span class="contactMemberPhone">
+                            <a href="tel:+91 1234567890">+91 8637677627</a>
+                        </span>
+                    </div>
+                    <div class="contactMember">
+                        <span class="contactMemberName">Sudarsun</span>
+                        <span class="contactMemberPhone">
+                            <a href="tel:+91 1234567890">+91 8610189750</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+</html>
